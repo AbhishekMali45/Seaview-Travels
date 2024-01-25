@@ -284,72 +284,152 @@ footer{
 
 @media only screen and (max-width: 768px){
     header nav {
-        flex-direction: column; /* Stack items vertically on smaller screens */
+        flex-direction: column; 
         align-items: center;
         text-align: center;
         font-size: 20px
     }
 
     .nav ul {
-        width: 100%; /* Make the navigation items take full width */
-        padding: 10px 0; /* Adjust spacing */
+        width: 100%; 
+        padding: 10px 0;
     }
 
 }
 
-@media only screen and (max-width: 480px) {
-    /* Adjust styles for screens with a max-width of 480px */
-    /* Example: Change font sizes, margins, or padding */
-    header nav {
-        font-size: 20px;
-    }
 
-    .banner {
-        font-size: 30px;
+@media screen and (width<= 350px){
+    
+    header nav{
+        width: 98vw;
+        padding: 4px;
+        font-size: 23px;
+        margin-right: 50px;
     }
-
-    #content {
-        font-size: 18px;
-    }
-
-    #images {
-        margin-left: 5px;
-        margin-right: 5px;
-    }
-
-    #packages {
-        font-size: 16px;
-    }
-
-    .learn_more {
-        font-size: 18px;
-        padding: 40px;
-    }
-
-    #learn {
-        font-size: 20px;
-    }
-
-    #subscribe input {
+    
+    .nav ul{
         width: 250px;
+        font-size: 0.6em;
     }
 
-    #subscribe button {
-        width: 140px;
+    .banner{
+        /* border: 2px solid black; */
+        padding: 20px;
+        /* gap: 20px; */
+        font-size: 30px;
+        color: aliceblue;
+        /* align-items: center; */
+        text-align: center;
+        top: 20vh;
     }
 
-    footer {
-        font-size: 16px;
+    .banner h4{
+        color: rgb(2, 19, 54);
     }
-
+    
+    .banner p{
+        font-size: 0.7em;
+        color: rgb(10, 41, 85);
+    }
+    
+    .banner button{
+        padding: 5px;
+        width: 130px;
+    }
+    
+    #content{
+        flex-direction: column;
+        align-items: center;
+        top: 75vh;
+        left: 5%;
+        font-size: 20px;
+        text-align: center;
+        width: 300px;
+        /* border: 2px solid black; */
+    }
+    
+    #content h5{
+        font-size: 1.2em;
+    }
+    
+    #content p{
+        font-size: 0.6em;
+        font-family:cursive;
+        margin-bottom: 30px;
+        border-bottom: 1px solid black;
+        padding-bottom: 15px;
+    }
+    
+    #images{
+        flex-direction: row;
+        /* border: 2px solid  red; */
+        top: 70vh;
+        margin-left: 0;
+        margin-right: 0;
+        flex-wrap: wrap;
+        padding: 25px;
+    }
+    
     #images .small{
         flex-basis: 100%;
-        width: 100%;
     }
-
+    
     #images .large{
         flex-basis: 100%;
-        width: 100%;
+    }
+
+    #packages{
+        display: flex;
+        position: relative;
+        top: 170vh;
+        width: 67%;
+        left: 15%;
+    }
+    
+    #packages-desc p{
+        font-size: 0.6em;
+    }
+    
+    .package_detail{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr); 
+        grid-gap: 15px;
+    }
+    
+    .trip p{
+        font-size: 0.6em;
+    }
+
+    .learn_more{
+        flex-direction: column;
+        align-items: center;
+        top: 175vh;
+        font-size: 20px;
+        text-align: center;
+        width: 67%;
+        padding: 50px;
+    }
+    
+    #learn p{
+        font-size: 0.6em;
+        padding-bottom: 15px;
+        width: 300px;
+    }
+    
+    #subscribe input{
+        padding: 6px;
+        width: 250px;
+    }
+    
+    #subscribe button{
+        margin-top: 7px;
+        padding: 5px;
+        width: 120px;
+    }
+    
+    footer{
+        top: 171vh;
+        font-size: 12px;
     }
 }
 

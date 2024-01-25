@@ -298,7 +298,7 @@ footer{
 }
 
 
-@media screen and (width<= 350px){
+@media screen and (width<= 450px){
     
     header nav{
         width: 98vw;
